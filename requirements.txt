@@ -1,0 +1,6 @@
+chainlit
+speechrecognition
+google-generativeai
+pytube
+python-dotenv
+-e .
