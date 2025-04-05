@@ -1,6 +1,10 @@
 # PlayMate
 A simple voice-enabled chatbot powered by Google Gemini AI and integrated with YouTube search and playback. It allows users to interact with the chatbot using voice commands or text input, making it a seamless and interactive experience.
 
+
+https://github.com/user-attachments/assets/8ccb05b9-4b30-400d-88ad-eb42d6b851bc
+
+
 ## 📂 Project Structure
 📂 PlayMate  
  ┣ 📂 utils  
