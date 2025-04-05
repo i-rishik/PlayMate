@@ -28,6 +28,10 @@ async def main(message: cl.Message):
     await process_input(user_input)
 
 async def process_input(user_input):
+    actions = [
+        cl.Action(name="voice_input", value="voice_input", label="🎤 Speak", payload={"type": "voice_input"})
+    ]
+
     if "play" in user_input:
         query = user_input.replace("play", "").strip()
         response_text = play_youtube(query)
@@ -36,7 +40,7 @@ async def process_input(user_input):
     else:
         response_text = ai_response(user_input)
 
-    await cl.Message(content=response_text).send()
+    await cl.Message(content=response_text, actions=actions).send()
 
 if __name__ == "__main__":
     cl.run()
